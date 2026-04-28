@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brewer's Ground Coffee Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Cormorant+Garamond:wght@300;400;500&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <nav id="navbar">
+    <a href="#home" class="nav-logo">
+      Brewer's Ground
+      <span>Coffee Shop</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <div class="hero-bg-circle"></div>
+    <div class="hero-bg-circle"></div>
+    <div class="hero-bg-circle"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Est. 2014 · Artisan Roastery</p>
+      <h1 class="hero-title">
+        Where Every Cup<br>
+        <em>Tells a Story</em>
+      </h1>
+      <p class="hero-subtitle">
+        Small-batch roasted, carefully brewed, thoughtfully served.<br>
+        Your refuge in the rush of the day.
+      </p>
+      <div class="hero-cta">
+        <a href="#menu" class="btn-primary">Explore Our Menu</a>
+        <a href="#about" class="btn-secondary">Our Story</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <section id="menu">
+    <div class="menu-intro reveal">
+      <p class="section-label">The Menu</p>
+      <h2 class="section-title">Crafted with <em>Intention</em></h2>
+      <p>Each item on our menu is developed with purpose — seasonal ingredients, ethical sourcing, and the conviction that great taste should be repeatable.</p>
+    </div>
+
+    <div class="menu-tabs reveal">
+      <button class="tab-btn active" data-tab="coffee">Coffee</button>
+      <button class="tab-btn" data-tab="cold">Cold Drinks</button>
+      <button class="tab-btn" data-tab="food">Food</button>
+      <button class="tab-btn" data-tab="pastries">Pastries</button>
+    </div>
+
+    <div class="menu-panel active" id="tab-coffee">
+      <div class="menu-item reveal">
+        <div class="item-top"><span class="item-name">Signature Espresso</span><span class="item-price">₱110</span></div>
+        <p class="item-desc">A double ristretto pulled from our house blend — dark chocolate, fig, and toasted walnut finish.</p>
+        <span class="item-tag">House Blend</span>
+      </div>
+      <div class="menu-item reveal">
+        <div class="item-top"><span class="item-name">Flat White</span><span class="item-price">₱155</span></div>
+        <p class="item-desc">Velvety microfoam over a concentrated shot, smooth and intensely satisfying.</p>
+        <span class="item-tag">Bestseller</span>
+      </div>
+      <div class="menu-item reveal">
+        <div class="item-top"><span class="item-name">Pour Over</span><span class="item-price">₱175</span></div>
+        <p class="item-desc">Single origin, brewed to order. Today's selection: Sagada Arabica with notes of dried mango and jasmine.</p>
+        <span class="item-tag">Single Origin</span>
+      </div>
+      <div class="menu-item reveal">
+        <div class="item-top"><span class="item-name">Cortado</span><span class="item-price">₱135</span></div>
+        <p class="item-desc">Equal parts espresso and warm milk — balance in every sip. No fluff, no fuss.</p>
+      </div>
+      <div class="menu-item reveal">
+        <div class="item-top"><span class="item-name">Caramel Macchiato</span><span class="item-price">₱165</span></div>
+        <p class="item-desc">Vanilla-infused steamed milk, fresh espresso, and a caramel ribbon. A classic, elevated.</p>
+        <span class="item-tag">Popular</span>
+      </div>
+      <div class="menu-item reveal">
+        <div class="item-top"><span class="item-name">Café Americano</span><span class="item-price">₱120</span></div>
+        <p class="item-desc">Double shot diluted to perfection. Clean, bold, and deeply satisfying for the purist.</p>
+      </div>
+    </div>
+
+    <div class="menu-panel" id="tab-cold">
+      <div class="menu-item reveal">
+        <div class="item-top"><span class="item-name">Cold Brew Tonic</span><span class="item-price">₱185</span></div>
+        <p class="item-desc">18-hour cold brew poured over tonic water. Effervescent, crisp, and caffeine-forward.</p>
+        <span class="item-tag">Signature</span>
+      </div>
+      <div class="menu-item reveal">
+        <div class="item-top"><span class="item-name">Iced Horchata Latte</span><span class="item-price">₱175</span></div>
+        <p class="item-desc">Espresso meets cinnamon-spiced rice milk over ice. Creamy, warming, and refreshing all at once.</p>
+        <span class="item-tag">Seasonal</span>
+      </div>
+      <div class="menu-item reveal">
+        <div class="item-top"><span class="item-name">Nitro Cold Brew</span><span class="item-price">₱195</span></div>
+        <p class="item-desc">Nitrogen-infused cold brew, cascading in the glass like a dark velvet waterfall. No sugar needed.</p>
+        <span class="item-tag">Bestseller</span>
+      </div>
+      <div class="menu-item reveal">
+        <div class="item-top"><span class="item-name">Salted Caramel Cold Foam</span><span class="item-price">₱185</span></div>
+        <p class="item-desc">Cold brew topped with a whipped salted caramel foam. Indulgent in every layer.</p>
+      </div>
+    </div>
+
+    <div class="menu-panel" id="tab-food">
+      <div class="menu-item reveal">
+        <div class="item-top"><span class="item-name">Avocado Toast</span><span class="item-price">₱215</span></div>
+        <p class="item-desc">Sourdough, smashed avocado, poached egg, chili flakes, and micro herbs. The perfect brunch anchor.</p>
+        <span class="item-tag">Brunch</span>
+      </div>
+      <div class="menu-item reveal">
+        <div class="item-top"><span class="item-name">Croque Monsieur</span><span class="item-price">₱245</span></div>
+        <p class="item-desc">Ham and Gruyère on toasted brioche with house béchamel. Rich, golden, and deeply satisfying.</p>
+        <span class="item-tag">Bestseller</span>
+      </div>
+      <div class="menu-item reveal">
+        <div class="item-top"><span class="item-name">Mushroom Tartine</span><span class="item-price">₱230</span></div>
+        <p class="item-desc">Wild mushrooms, thyme cream cheese, and pickled shallots on grilled levain. Earthy and bold.</p>
+        <span class="item-tag">Vegetarian</span>
+      </div>
+      <div class="menu-item reveal">
+        <div class="item-top"><span class="item-name">Granola Bowl</span><span class="item-price">₱195</span></div>
+        <p class="item-desc">House granola, Greek yogurt, seasonal fruit, and wildflower honey. Light and nourishing.</p>
+      </div>
+    </div>
+
+    <div class="menu-panel" id="tab-pastries">
+      <div class="menu-item reveal">
+        <div class="item-top"><span class="item-name">Kouign-Amann</span><span class="item-price">₱145</span></div>
+        <p class="item-desc">Layered, buttery, caramelized Breton pastry. Crisp outside, pull-apart tender inside.</p>
+        <span class="item-tag">Bestseller</span>
+      </div>
+      <div class="menu-item reveal">
+        <div class="item-top"><span class="item-name">Cardamom Knot</span><span class="item-price">₱125</span></div>
+        <p class="item-desc">Scandinavian-style bun twisted with cardamom butter and pearl sugar. Warm and aromatic.</p>
+        <span class="item-tag">Seasonal</span>
+      </div>
+      <div class="menu-item reveal">
+        <div class="item-top"><span class="item-name">Almond Croissant</span><span class="item-price">₱140</span></div>
+        <p class="item-desc">Twice-baked with almond frangipane, toasted flaked almonds, and a dusting of icing sugar.</p>
+        <span class="item-tag">House Favourite</span>
+      </div>
+      <div class="menu-item reveal">
+        <div class="item-top"><span class="item-name">Dark Chocolate Tart</span><span class="item-price">₱155</span></div>
+        <p class="item-desc">Bittersweet ganache in a crisp cocoa shell. Finished with Maldon salt and gold leaf.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about-visual reveal">
+      <div class="about-frame about-frame-main">
+        <div class="about-icon">☕</div>
+      </div>
+      <div class="about-frame about-frame-accent"></div>
+      <div class="about-badge">
+        <div class="badge-num">10</div>
+        <div class="badge-txt">Years of<br>Craft</div>
+      </div>
+    </div>
+
+    <div class="about-text reveal">
+      <p class="section-label">Our Story</p>
+      <h2 class="section-title">Born from a <em>Love of the Bean</em></h2>
+      <p>Brewer's Ground was born from a single conviction: that coffee — real coffee — deserves patience. We started in a tiny corner space in 2014, roasting in small batches and learning the language of origin, fermentation, and flame.</p>
+      <p>A decade on, that conviction hasn't changed. We still roast weekly, source directly from farms across the Philippines, Ethiopia, and Colombia, and train every barista to treat each shot as its own small ceremony.</p>
+      <p>This is more than a coffee shop. It's a place to slow down, taste something true, and feel a little more human.</p>
+      <div class="values-grid">
+        <div class="value-item">
+          <div class="value-title">Direct Trade</div>
+          <div class="value-desc">Sourced directly from farmers we know by name.</div>
+        </div>
+        <div class="value-item">
+          <div class="value-title">Small Batch</div>
+          <div class="value-desc">Roasted weekly in 10 kg lots for peak freshness.</div>
+        </div>
+        <div class="value-item">
+          <div class="value-title">Community</div>
+          <div class="value-desc">Giving back 5% of profits to local coffee cooperatives.</div>
+        </div>
+        <div class="value-item">
+          <div class="value-title">Zero Waste</div>
+          <div class="value-desc">Compostable packaging and coffee grounds recycling.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="reveal">
+      <p class="section-label">Get in Touch</p>
+      <h2 class="section-title">We'd Love to <em>Hear from You</em></h2>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="contact-info-block">
+          <div class="info-label">Location</div>
+          <div class="info-value">42 Iznart Street, Iloilo City<br>Western Visayas, Philippines</div>
+        </div>
+        <div class="contact-info-block">
+          <div class="info-label">Hours</div>
+          <div class="info-value">
+            Mon – Fri: 7:00 AM – 8:00 PM<br>
+            Sat – Sun: 8:00 AM – 9:00 PM
+          </div>
+        </div>
+        <div class="contact-info-block">
+          <div class="info-label">Contact</div>
+          <div class="info-value">
+            hello@brewersground.com<br>
+            +63 (033) 321 4567
+          </div>
+        </div>
+        <div class="contact-info-block">
+          <div class="info-label">Reservations</div>
+          <div class="info-value">Walk-ins welcome. Group reservations of 8+ recommended at least 48 hours in advance.</div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="field-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" placeholder="Maria" required />
+            </div>
+            <div class="field-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" placeholder="Santos" required />
+            </div>
+          </div>
+          <div class="field-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="maria@example.com" required />
+          </div>
+          <div class="field-group">
+            <label for="subject">Subject</label>
+            <select id="subject">
+              <option value="">— Select a topic —</option>
+              <option>General Inquiry</option>
+              <option>Group Reservation</option>
+              <option>Event Hosting</option>
+              <option>Wholesale / Beans</option>
+              <option>Feedback</option>
+            </select>
+          </div>
+          <div class="field-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Tell us what's on your mind…" required></textarea>
+          </div>
+          <p class="form-note">We typically respond within 24 hours on business days.</p>
+          <button type="submit" class="btn-submit"><span>Send Message</span></button>
+          <div id="form-success">✦ Thank you! Your message has been received. We'll be in touch soon.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-logo">Brewer's Ground</div>
+    <div class="footer-copy">© 2024 Brewer's Ground Coffee Shop. All rights reserved.</div>
+    <div class="footer-socials">
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">TikTok</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
